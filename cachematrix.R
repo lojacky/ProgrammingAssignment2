@@ -1,11 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-
-<<<<<<< HEAD
-makeCacheMatrix <- function(x = matrix()) {
-
-=======
 #This function is to store the cache matrix and the related invertible matrix, 
 #You can retrieve the data by using $getMatrix, $getInvertibleMatrix and set the data by using $setMatrix(matrix), and $setInvertibleMatrix(matrix)
 
@@ -25,7 +18,6 @@ makeCacheMatrix <- function(matrix_data = matrix()) {
   list(setMatrix = setMatrix, getMatrix = getMatrix,
        setInvertibleMatrix = setInvertibleMatrix,
        getInvertibleMatrix = getInvertibleMatrix)
->>>>>>> origin/master
 }
 
 
@@ -36,9 +28,6 @@ makeCacheMatrix <- function(matrix_data = matrix()) {
 #Output: Invertible Matrix
 
 cacheSolve <- function(x, ...) {
-<<<<<<< HEAD
-        ## Return a matrix that is the inverse of 'x'
-=======
   ## Return a matrix that is the inverse of 'x'
   m <- x$getInvertibleMatrix()
   if(!is.null(m)) {
@@ -49,5 +38,4 @@ cacheSolve <- function(x, ...) {
   m <- solve(data, ...)
   x$setInvertibleMatrix(m)
   m
->>>>>>> origin/master
 }
